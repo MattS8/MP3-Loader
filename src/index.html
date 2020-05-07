@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MP3 Loader</title>
+    <link rel="stylesheet" href="../src/css/photon.min.css">
+    <script defer src="../src/js/Render.js"></script>
+  </head>
+  <body>
+    
+    <div class="window">
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content"> 
+        <div id="content" class="pane">
+
+          <h4 style="padding-left: 20px; padding-right: 20px;">Select a file/folder to load onto the MP3 Player:</h4>
+          <button style="margin-left: 20px; margin-right: 20px;" id="selectFolderBtn" class="btn-default">Select Folder</button>
+          <p style="color: grey; margin-left: 20px; margin-right: 20px;" id="filesSelected">No Files are slected.</p>
+          
+          <div id="filesTable" style="margin-left: 20px; margin-right: 20px; display: inline-block; margin-top: 10px;" > </div>
+          <h5 style="margin-top: 50px; padding-left: 20px; padding-right: 20px;">Select the location of the MP3 Player:</h5>
+          <div class="form-group" style="margin: 0 auto;">
+            <button style="margin-left: 20px; margin-right: 20px;" id="browseMP3LocationBtn" class="btn btn-mini btn-default">Browse MP3 Location</button>
+            <input style=" max-width: 300px; font-weight: bold;" id="mp3LocationInput" type="text" class="form-control" placeholder="" >
+        </div>
+
+        <button style="margin-top: 10%; padding-left: 10%; padding-right: 10%; display: block; margin-left: auto; margin-right: auto;" 
+        id="sendToMP3Btn" class="btn-large btn-primary">Send To MP3</button>
+
+        <p style="color: red; margin-top: 5px; margin-bottom: 75px; width: 100%; text-align: center;" 
+        id="sendToMP3ResultTxt"></p>
+
+        </div> 
+      </div>
+    </div>
+    <h1>MP3 Loader</h1>
+    
+    
+  </body>
+</html>
